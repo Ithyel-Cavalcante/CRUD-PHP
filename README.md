@@ -38,3 +38,7 @@ Instalação
     Abra o arquivo connection.php e ajuste os parâmetros de conexão (usuário, senha e banco de dados) conforme sua configuração local.
 
 5 - Abra o projeto no seu navegador
+
+Como usar o site: 
+    Ao baixar a pasta, a primeira coisa a se fazer é acessar o arquivo "login.php" é o primeiro na hierarquia de acesso.
+    Em seguida fica a criterio do usuario fazer um agendamento e navegar pelas abas.
