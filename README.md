@@ -7,6 +7,7 @@ Tecnologias Utilizadas
     PHP: Linguagem de programação principal para o back-end.
     MySQL: Banco de dados para armazenamento de informações de usuários e agendamentos.
     Bootstrap: Framework CSS para a construção da interface.
+    Tailwind: Outro framework CSS.
     HTML/CSS: Marcação e estilização da página web.
 
 Funcionalidades
