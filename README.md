@@ -23,9 +23,11 @@ Para o Administrador:
 
 Instalação
 1 - Clone o repositório: 
+    
         git clone https://github.com/ithyel-cavalcante/CRUD-PHP.git
 
 2 - Acesse o diretório do projeto:
+    
     cd CRUD-PHP
     
 3 - Configure o banco de dados MySQL:
@@ -39,6 +41,22 @@ Instalação
 
 5 - Abra o projeto no seu navegador
 
-Como usar o site: 
+6 - Como usar o site: 
+    
     Ao baixar a pasta, a primeira coisa a se fazer é acessar o arquivo "login.php" é o primeiro na hierarquia de acesso.
     Em seguida fica a criterio do usuario fazer um agendamento e navegar pelas abas.
+
+7 - Consultas Sql utilizadas:
+    
+    login.php:   "select * from users where email = '$email' and senha = '$senha'";
+
+    newUser.php:  "INSERT INTO `users`(`id`, `nome`, `email`, `telefone`, `senha`) VALUES ('0','$nome','$email','$tel','$senha')";
+
+    editarPerfil.php: "UPDATE users SET nome = '$nome', email = '$email', telefone = '$telefone', senha = '$senha' WHERE id = '$id_usuario'"
+
+    agendarCorte.php: "INSERT INTO agendamento (telefone_cliente, corte_cliente, data_corte, hora_corte, user_id) 
+                     VALUES ('$telefone', '$corte', '$data', '$horario', '$user_id')";
+
+    admin.php: "SELECT * FROM agendamento ORDER BY data_corte DESC, hora_corte DESC";
+
+
